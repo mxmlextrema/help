@@ -43,8 +43,9 @@ jobs:
         run: mdbook build
       - name: Git commit report
         run: |
-          # https://unix.stackexchange.com/a/153863
-          find . ! -name 'book' -type f -exec rm -f {} +
+          # https://stackoverflow.com/a/34057281/26380963
+          shopt -s extglob
+          rm -rf !(book)
           mv -f book .
 
           git config --global user.name 'hydroperfox'
