@@ -52,7 +52,7 @@ jobs:
           git remote add origin https://github.com/mxmlextrema/mxmlchelp
           git config --global user.name 'hydroperfox'
           git config --global user.email 'hydroperfox@gmail.com'
-          git switch -C live
+          git checkout live
           git rm --cached -r .
           git add .
           git commit -m "Automated report"
