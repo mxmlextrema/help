@@ -45,7 +45,7 @@ jobs:
         run: |
           # https://unix.stackexchange.com/a/153863
           find . ! -name 'book' -type f -exec rm -f {} +
-          mv -f book .
+          cp -r book .
           rmdir book
 
           git config --global user.name 'hydroperfox'
