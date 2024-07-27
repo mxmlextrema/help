@@ -50,7 +50,7 @@ jobs:
           git config --global user.name 'hydroperfox'
           git config --global user.email 'hydroperfox@gmail.com'
           git switch -C live
-          git rm .github src theme .gitignore book.toml
+          git rm -r .github src theme .gitignore book.toml
           git add .
           git commit -m "Automated report"
           git push origin -f live
