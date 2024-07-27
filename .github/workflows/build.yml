@@ -43,13 +43,13 @@ jobs:
         run: mdbook build
       - name: Git commit report
         run: |
-          rmdir .github
-          rmdir src
-          rmdir theme
+          rm -rf .github
+          rm -rf src
+          rm -rf theme
           rm .gitignore
           rm book.toml
           cp -r book ..
-          rmdir --ignore-fail-on-non-empty book
+          rm -rf book
 
           # Git commit
           git config --global user.name 'hydroperfox'
