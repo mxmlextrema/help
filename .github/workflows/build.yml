@@ -48,7 +48,7 @@ jobs:
           rm -rf theme
           rm .gitignore
           rm book.toml
-          cp -r book ..
+          mv -f book ..
           rm -rf book
 
           # Git commit
