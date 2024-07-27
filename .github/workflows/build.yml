@@ -44,9 +44,9 @@ jobs:
       - name: Git commit report
         run: |
           # https://unix.stackexchange.com/a/153863
-          find . ! -name 'book' -type f -exec rm -f {} +
+          find . ! -name 'book' -type f -exec rm -fr {} +
           cp -r book ..
-          rmdir book
+          rmdir --ignore-fail-on-non-empty book
 
           git config --global user.name 'hydroperfox'
           git config --global user.email 'hydroperfox@gmail.com'
