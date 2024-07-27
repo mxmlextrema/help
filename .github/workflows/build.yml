@@ -54,7 +54,7 @@ jobs:
           # Git commit
           git config --global user.name 'hydroperfox'
           git config --global user.email 'hydroperfox@gmail.com'
-          git switch -B live
+          git switch -C live
           git rm --cached -r .
           git add .
           git commit -m "Automated report"
