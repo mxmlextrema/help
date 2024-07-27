@@ -43,16 +43,19 @@ jobs:
         run: mdbook build
       - name: Git commit report
         run: |
-          # https://unix.stackexchange.com/a/153863
-          find . ! -name 'book' -type f -exec rm -rf {} +
+          rmdir .github
+          rmdir src
+          rmdir theme
+          rm .gitignore
+          rm book.toml
           cp -r book ..
           rmdir --ignore-fail-on-non-empty book
 
-          git init
-          git remote add origin https://github.com/mxmlextrema/mxmlchelp
+          # Git commit
           git config --global user.name 'hydroperfox'
           git config --global user.email 'hydroperfox@gmail.com'
-          git checkout -b live
+          git switch -B live
+          git rm --cached -r .
           git add .
           git commit -m "Automated report"
           git push origin -f live
