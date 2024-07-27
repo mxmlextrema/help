@@ -43,7 +43,7 @@ jobs:
         run: mdbook build
       - name: Git commit report
         run: |
-          mv -f book .
+          mv -f book/{.,}* .
           rm -rf book
 
           # Git commit
