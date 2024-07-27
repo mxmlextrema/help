@@ -43,11 +43,6 @@ jobs:
         run: mdbook build
       - name: Git commit report
         run: |
-          rm -rf .github
-          rm -rf src
-          rm -rf theme
-          rm .gitignore
-          rm book.toml
           mv -f book ..
           rm -rf book
 
@@ -55,7 +50,7 @@ jobs:
           git config --global user.name 'hydroperfox'
           git config --global user.email 'hydroperfox@gmail.com'
           git switch -C live
-          git rm --cached -r .
+          git rm .github src theme .gitignore book.toml
           git add .
           git commit -m "Automated report"
           git push origin -f live
