@@ -8,7 +8,31 @@ There are several ways of embedding static media in ActionScript 3 programs. Bot
 
 ## Embed meta-data
 
-The `[Embed]` ActionScript 3 meta-data is used in two different ways:
+The `[Embed]` ActionScript 3 meta-data is used in two different ways.
 
-* It may appear in a class definition in which case it must extend the right class
-* It may appear in a `static` variable definition, consisting of only one binding, possibly `const` (without initializer), strictly typed `Class`.
+It may appear in a class definition:
+
+```as3
+package
+{
+    import flash.utils.*;
+
+    [Embed(...)]
+    public class CustomFont extends ByteArray
+    {
+    }
+}
+```
+
+It may appear in a variable definition:
+
+```as3
+package
+{
+    public class StaticFonts
+    {
+        [Embed(...)]
+        public static const custom:Class;
+    }
+}
+```
