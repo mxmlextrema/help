@@ -53,6 +53,7 @@ jobs:
           git config --global user.name 'hydroperfox'
           git config --global user.email 'hydroperfox@gmail.com'
           git switch -C live
+          git rm --cached -r .
           git add .
           git commit -m "Automated report"
           git push origin -f live
