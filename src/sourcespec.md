@@ -18,8 +18,10 @@ The following is an example ActionScript 3 program demonstrating the case:
 src/bath.as
 
 ```as3
-package {
-    public function bath():void {
+package
+{
+    public function bath():void
+    {
         include "./bathLog.inc.as";
     }
 }
