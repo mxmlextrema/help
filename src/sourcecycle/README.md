@@ -21,13 +21,13 @@ The MXML compiler handles three source formats simultaneously: ActionScript 3, M
         1. Remove each element from *remMXML* that is of the `VerifierPhase::Finished` phase.
 6. For each package in *allPackages*
     1. Visit statements
-7. While *remCSS* is non empty
-    1. Visit directives for each *remCSS* element or defer
-    2. Remove each element from *remCSS* that has been finished.
-8. While *remAS* is non empty
+7. While *remAS* is non empty
     1. Resolve directives and then statements for each *remAS*
     2. Remove each element from *remAS* that has been finished.
-0. Visit each deferred function expression or defer for a number of `MAX_CYCLES`.
-10. Add verify error for each function expression that could not be resolved.
-11. Finish each definition conflict, reporting any errors.
-12. Reset verifier state.
+8. While *remCSS* is non empty
+    1. Visit directives for each *remCSS* element or defer
+    2. Remove each element from *remCSS* that has been finished.
+10. Visit each deferred function expression or defer for a number of `MAX_CYCLES`.
+11. Add verify error for each function expression that could not be resolved.
+12. Finish each definition conflict, reporting any errors.
+13. Reset verifier state.
