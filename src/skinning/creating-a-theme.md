@@ -1,6 +1,6 @@
-# User interface themes
+# Creating a theme
 
-The MX framework supports linking cascading style sheet files against a mx.themes.Theme subclass.
+The MX framework supports linking  acascading style sheet file against a class that extends mx.themes.Theme.
 
 - The `PropertyReference(name)` CSS calls resolve to a property within the mx.themes.Theme subclass scope, whether it is a static property or an instance property.
 
@@ -9,7 +9,7 @@ package
 {
     import mx.themes.*;
 
-    [Theme(source = "style.css")]
+    [Theme(file = "style.css")]
     public class RockTheme extends Theme
     {
     }
