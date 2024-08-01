@@ -1,7 +1,7 @@
 # Summary
 
 - [Introduction](introduction.md)
-- [Source cycle](sourcecycle/README.md)
+- [Internals: Source cycle](sourcecycle/README.md)
   - [MXML source cycle](sourcecycle/mxml.md)
   - [CSS source cycle](sourcecycle/css.md)
   - [AS3 source cycle](sourcecycle/as3.md)
