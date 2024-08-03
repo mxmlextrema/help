@@ -6,4 +6,4 @@ Verification may occur in the *external* mode, where all methods must be either 
 
 The external mode is used primarily for the Adobe AIR built-ins (top-level, `flash.**` and `air.**`). The top-level includes the parameterized `Vector.<T>` for instance.
 
-The Flex library (`mx.**`) is not external but part of the compiler, therefore it is not verified in external mode.
+The Flex library (`chief.**`) is not external but part of the compiler, therefore it is not verified in external mode.

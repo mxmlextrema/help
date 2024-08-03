@@ -1,3 +1,3 @@
 # User interface
 
-MXMLC ships with the MX framework which supports building user interfaces and layouts with little effort.
+MXMLC ships with the Chief framework which supports building user interfaces and layouts with little effort.
