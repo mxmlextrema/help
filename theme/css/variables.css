@@ -12,12 +12,6 @@
     --code-font-size: 0.73em /* please adjust the ace font size accordingly in editor.js */
 }
 
-@media (max-resolution: 1dppx) {
-    :root {
-        --code-font-size: 0.65em
-    }
-}
-
 /* Themes */
 
 .light, .rust {
