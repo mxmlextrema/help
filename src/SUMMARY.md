@@ -1,6 +1,6 @@
 # Summary
 
-- [Introduction](introduction.md)
+- [MXMLExtrema](mxmlextrema.md)
 - [Internals: Source cycle](sourcecycle/README.md)
   - [MXML source cycle](sourcecycle/mxml.md)
   - [CSS source cycle](sourcecycle/css.md)
